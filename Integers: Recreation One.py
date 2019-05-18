@@ -1,15 +1,17 @@
 from math import sqrt
 def list_squared(m, n):
     result = []
-    for num in range(m, n + 1):
-        divider_sum = 0
-        for divider in range(1, num + 1):
-            if num % divider == 0:
-                divider_sum += divider * divider
-        sqrt_sum = sqrt(divider_sum)
-        if sqrt_sum % 1 == 0:
-            result.append([num, divider_sum])
+    for i in range(m, n+1):
+        divisorsOfi = []
+        for j in range(1,int(sqrt(i))+1):
+            if i % j == 0:
+                divisorsOfi.append(pow(j, 2))
+                if i/j != float(j):
+                    divisorsOfi.append(pow(int(i/j),2))
+        sumOfDivisorsOfi = 1
+        if len(divisorsOfi) > 1:
+            sumOfDivisorsOfi = sum(divisorsOfi)
+        sqrtSumOfDivisorsOfi = sqrt(sumOfDivisorsOfi)
+        if int(sqrtSumOfDivisorsOfi) * int(sqrtSumOfDivisorsOfi) == sumOfDivisorsOfi:
+            result.append([i, sumOfDivisorsOfi])
     return result
-
-
-print(list_squared(1, 250))

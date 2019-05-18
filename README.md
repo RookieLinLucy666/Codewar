@@ -21,3 +21,4 @@ This repo is to practice the python skill. There are the questions and answers.
 - [Where my anagrams at?](<https://github.com/RookieLinLucy666/Codewar/blob/master/Where%20my%20anagrams%20at%3F.py>)
 - [Who likes it?](<https://github.com/RookieLinLucy666/Codewar/blob/master/Who%20likes%20it%EF%BC%9F.py>)
 - [Your order, please](<https://github.com/RookieLinLucy666/Codewar/blob/master/Your%20order%2C%20please.py>)
+- [**Matrix Determinant**](https://github.com/RookieLinLucy666/Codewar/blob/master/Matrix%20Determinant.py)
